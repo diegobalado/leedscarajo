@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { DataTable, Text } from 'grommet';
 import data from '../../datasources/points.json';
+import teams from '../../datasources/teams.json';
 
 const parseData = data => {
   data.sort((teamA, teamB) => teamA.points < teamB.points);
-  return data.map((teamData, index) => ({ ...teamData, 'position': index + 1}));
+  return data.map((teamData, index) => ({ ...teamData, 'position': index + 1 }));
 };
 
-const Table = () => {
+const Positions = () => {
   const [sort, setSort] = useState({
     property: "points",
     direction: "desc"
@@ -17,9 +18,10 @@ const Table = () => {
   useEffect(() => {
     setLeagueData(parseData(data));
   }, []);
-
+  
   return (
   <DataTable
+    primaryKey='index'
     sort={sort}
     onSort={setSort}
     columns={[
@@ -30,7 +32,7 @@ const Table = () => {
       {
         property: 'name',
         header: <Text>Team</Text>,
-        primary: true,
+        render: ({ id }) => teams[id]
       },
       {
         property: 'games',
@@ -62,4 +64,4 @@ const Table = () => {
   )
 };
 
-export default Table;
+export default Positions;

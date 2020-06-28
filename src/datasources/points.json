@@ -1,7 +1,6 @@
 [
     {
-        "id": 1,
-        "name": "Barnsley",
+        "id": 0,
         "games": 39,
         "wins": 9,
         "draws": 11,
@@ -10,8 +9,7 @@
         "points": 38
     },
     {
-        "id": 2,
-        "name": "Birmingham City",
+        "id": 1,
         "games": 39,
         "wins": 12,
         "draws": 13,
@@ -20,8 +18,7 @@
         "points": 49
     },
     {
-        "id": 3,
-        "name": "Blackburn Rovers",
+        "id": 2,
         "games": 39,
         "wins": 15,
         "draws": 11,
@@ -30,8 +27,7 @@
         "points": 56
     },
     {
-        "id": 4,
-        "name": "Brentford",
+        "id": 3,
         "games": 39,
         "wins": 19,
         "draws": 9,
@@ -40,8 +36,7 @@
         "points": 66
     },
     {
-        "id": 5,
-        "name": "Bristol City",
+        "id": 4,
         "games": 38,
         "wins": 15,
         "draws": 10,
@@ -50,8 +45,7 @@
         "points": 55
     },
     {
-        "id": 6,
-        "name": "Cardiff City",
+        "id": 5,
         "games": 39,
         "wins": 15,
         "draws": 15,
@@ -60,8 +54,7 @@
         "points": 60
     },
     {
-        "id": 7,
-        "name": "Charlton Athletic",
+        "id": 6,
         "games": 39,
         "wins": 12,
         "draws": 9,
@@ -70,8 +63,7 @@
         "points": 45
     },
     {
-        "id": 8,
-        "name": "Derby County",
+        "id": 7,
         "games": 39,
         "wins": 15,
         "draws": 12,
@@ -80,8 +72,7 @@
         "points": 57
     },
     {
-        "id": 9,
-        "name": "Fulham",
+        "id": 8,
         "games": 39,
         "wins": 18,
         "draws": 10,
@@ -90,8 +81,7 @@
         "points": 64
     },
     {
-        "id": 10,
-        "name": "Huddersfield Town",
+        "id": 9,
         "games": 38,
         "wins": 11,
         "draws": 9,
@@ -100,8 +90,7 @@
         "points": 42
     },
     {
-        "id": 11,
-        "name": "Hull City",
+        "id": 10,
         "games": 39,
         "wins": 11,
         "draws": 9,
@@ -110,8 +99,7 @@
         "points": 42
     },
     {
-        "id": 12,
-        "name": "Leeds United",
+        "id": 11,
         "games": 39,
         "wins": 22,
         "draws": 8,
@@ -120,8 +108,7 @@
         "points": 74
     },
     {
-        "id": 13,
-        "name": "Luton Town",
+        "id": 12,
         "games": 39,
         "wins": 11,
         "draws": 6,
@@ -130,8 +117,7 @@
         "points": 39
     },
     {
-        "id": 14,
-        "name": "Middlesbrough",
+        "id": 13,
         "games": 39,
         "wins": 10,
         "draws": 14,
@@ -140,8 +126,7 @@
         "points": 44
     },
     {
-        "id": 15,
-        "name": "Millwall",
+        "id": 14,
         "games": 39,
         "wins": 13,
         "draws": 16,
@@ -150,8 +135,7 @@
         "points": 55
     },
     {
-        "id": 16,
-        "name": "Nottingham Forest",
+        "id": 15,
         "games": 38,
         "wins": 16,
         "draws": 13,
@@ -160,8 +144,7 @@
         "points": 61
     },
     {
-        "id": 17,
-        "name": "Preston North End",
+        "id": 16,
         "games": 39,
         "wins": 16,
         "draws": 9,
@@ -170,8 +153,7 @@
         "points": 57
     },
     {
-        "id": 18,
-        "name": "Queens Park Rangers",
+        "id": 17,
         "games": 39,
         "wins": 14,
         "draws": 8,
@@ -180,8 +162,7 @@
         "points": 50
     },
     {
-        "id": 19,
-        "name": "Reading",
+        "id": 18,
         "games": 39,
         "wins": 13,
         "draws": 10,
@@ -190,8 +171,7 @@
         "points": 49
     },
     {
-        "id": 20,
-        "name": "Sheffield Wednesday",
+        "id": 19,
         "games": 38,
         "wins": 13,
         "draws": 10,
@@ -200,8 +180,7 @@
         "points": 49
     },
     {
-        "id": 21,
-        "name": "Stoke City",
+        "id": 20,
         "games": 39,
         "wins": 12,
         "draws": 7,
@@ -210,8 +189,7 @@
         "points": 43
     },
     {
-        "id": 22,
-        "name": "Swansea City",
+        "id": 21,
         "games": 39,
         "wins": 14,
         "draws": 14,
@@ -220,8 +198,7 @@
         "points": 56
     },
     {
-        "id": 23,
-        "name": "West Bromwich Albion",
+        "id": 22,
         "games": 39,
         "wins": 19,
         "draws": 14,
@@ -230,8 +207,7 @@
         "points": 71
     },
     {
-        "id": 24,
-        "name": "Wigan Athletic",
+        "id": 23,
         "games": 39,
         "wins": 12,
         "draws": 11,
