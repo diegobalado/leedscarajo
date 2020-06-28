@@ -11,11 +11,12 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
+    "rimraf": "^3.0.2",
     "styled-components": "^5.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && rimraf './docs/**' && mkdir './docs' && cp -r ./build/** ./docs",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
