@@ -1,25 +1,21 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { DataTable, Text } from 'grommet';
-import data from '../../datasources/points.json';
-import teams from '../../datasources/teams.json';
-
-const parseData = data => {
-  data.sort((teamA, teamB) => teamA.points < teamB.points);
-  return data.map((teamData, index) => ({ ...teamData, 'position': index + 1 }));
-};
+import { useFetch } from '../../utils/hooks';
+import Loader from '../common/Loader';
 
 const Positions = () => {
   const [sort, setSort] = useState({
     property: "points",
     direction: "desc"
   });
-  const [leagueData, setLeagueData] = useState([]);
+  const { loading, data } = useFetch(
+    `${process.env.REACT_APP_API_FOOTBALL_URL}/standings`, {
+      'headers': {
+        'x-auth-token': process.env.REACT_APP_API_FOOTBALL_TOKEN
+      }
+    });
 
-  useEffect(() => {
-    setLeagueData(parseData(data));
-  }, []);
-  
-  return (
+  return loading || !data ? <Loader /> : (
   <DataTable
     primaryKey='index'
     sort={sort}
@@ -30,28 +26,27 @@ const Positions = () => {
         header: <Text>Position</Text>
       },
       {
-        property: 'name',
+        property: 'team.name',
         header: <Text>Team</Text>,
-        render: ({ id }) => teams[id]
       },
       {
-        property: 'games',
+        property: 'playedGames',
         header: <Text>G</Text>,
       },
       {
-        property: 'wins',
+        property: 'won',
         header: <Text>W</Text>,
       },
       {
-        property: 'draws',
+        property: 'draw',
         header: <Text>D</Text>,
       },
       {
-        property: 'loses',
+        property: 'lost',
         header: <Text>L</Text>,
       },
       {
-        property: 'goal_diff',
+        property: 'goalDifference',
         header: <Text>GD</Text>,
       },
       {
@@ -59,7 +54,7 @@ const Positions = () => {
         header: <Text>P</Text>,
       },
     ]}
-    data={leagueData}
+    data={data.standings[0].table}
   />
   )
 };
