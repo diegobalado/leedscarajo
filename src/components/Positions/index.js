@@ -1,21 +1,15 @@
 import React, { useState } from 'react';
 import { DataTable, Text } from 'grommet';
-import { useFetch } from '../../utils/hooks';
-import Loader from '../common/Loader';
+import { useRecoilValue } from 'recoil';
+import { positions } from '../../recoil/atoms';
 
 const Positions = () => {
+  const positionsData = useRecoilValue(positions);
   const [sort, setSort] = useState({
     property: "points",
     direction: "desc"
   });
-  const { loading, data } = useFetch(
-    `${process.env.REACT_APP_API_FOOTBALL_URL}/standings`, {
-      'headers': {
-        'x-auth-token': process.env.REACT_APP_API_FOOTBALL_TOKEN
-      }
-    });
-
-  return loading || !data ? <Loader /> : (
+  return !positionsData ? <div>Loading...</div> : (
   <DataTable
     primaryKey='index'
     sort={sort}
@@ -54,7 +48,7 @@ const Positions = () => {
         header: <Text>P</Text>,
       },
     ]}
-    data={data.standings[0].table}
+    data={positionsData.standings[0].table}
   />
   )
 };
