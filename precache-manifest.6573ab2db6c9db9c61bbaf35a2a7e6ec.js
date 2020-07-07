@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3d1632206fb3c30e243188708c7f1122",
+    "revision": "adf946a4f8f1390b3acce4a39f9323f0",
     "url": "/leedscarajo/index.html"
   },
   {
-    "revision": "b460a2916738168e7b08",
+    "revision": "d0352163748910a3e92c",
     "url": "/leedscarajo/static/css/main.5f361e03.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/leedscarajo/static/js/2.0e44f962.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b460a2916738168e7b08",
-    "url": "/leedscarajo/static/js/main.221abc67.chunk.js"
+    "revision": "d0352163748910a3e92c",
+    "url": "/leedscarajo/static/js/main.a6ec4876.chunk.js"
   },
   {
     "revision": "a188dc7ac5680cf54a7d",
