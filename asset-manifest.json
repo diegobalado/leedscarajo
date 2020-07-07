@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/leedscarajo/static/css/main.5f361e03.chunk.css",
-    "main.js": "/leedscarajo/static/js/main.b5a97071.chunk.js",
-    "main.js.map": "/leedscarajo/static/js/main.b5a97071.chunk.js.map",
+    "main.js": "/leedscarajo/static/js/main.82ac730f.chunk.js",
+    "main.js.map": "/leedscarajo/static/js/main.82ac730f.chunk.js.map",
     "runtime-main.js": "/leedscarajo/static/js/runtime-main.e21bcbb2.js",
     "runtime-main.js.map": "/leedscarajo/static/js/runtime-main.e21bcbb2.js.map",
     "static/js/2.415e60e3.chunk.js": "/leedscarajo/static/js/2.415e60e3.chunk.js",
     "static/js/2.415e60e3.chunk.js.map": "/leedscarajo/static/js/2.415e60e3.chunk.js.map",
     "index.html": "/leedscarajo/index.html",
-    "precache-manifest.dc1880c813098640eb1074fdc76ab25c.js": "/leedscarajo/precache-manifest.dc1880c813098640eb1074fdc76ab25c.js",
+    "precache-manifest.6ed73c04df613b2e019994a6ffed2bb1.js": "/leedscarajo/precache-manifest.6ed73c04df613b2e019994a6ffed2bb1.js",
     "service-worker.js": "/leedscarajo/service-worker.js",
     "static/css/main.5f361e03.chunk.css.map": "/leedscarajo/static/css/main.5f361e03.chunk.css.map",
     "static/js/2.415e60e3.chunk.js.LICENSE.txt": "/leedscarajo/static/js/2.415e60e3.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.e21bcbb2.js",
     "static/js/2.415e60e3.chunk.js",
     "static/css/main.5f361e03.chunk.css",
-    "static/js/main.b5a97071.chunk.js"
+    "static/js/main.82ac730f.chunk.js"
   ]
 }
