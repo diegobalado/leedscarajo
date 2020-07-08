@@ -1,3 +1,3 @@
 import { atom } from 'recoil';
 
-export const positions = atom({ key: 'positions', default: null });
+export const standings = atom({ key: 'standings', default: null });

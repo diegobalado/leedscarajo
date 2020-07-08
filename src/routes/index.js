@@ -2,7 +2,7 @@ import React from 'react';
 import {
   Switch,
   Route,
-} from "react-router-dom";
+} from 'react-router-dom';
 import Positions from '../components/Positions';
 import Fixture from '../components/Fixture';
 import Home from '../components/Home';
@@ -18,6 +18,6 @@ const Routes = () =>
     <Route path={`${process.env.PUBLIC_URL}/fixture`}>
       <Fixture />
     </Route>
-  </Switch>
+  </Switch>;
 
 export default Routes;
