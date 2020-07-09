@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/leedscarajo/static/css/main.5f361e03.chunk.css",
-    "main.js": "/leedscarajo/static/js/main.8791c535.chunk.js",
-    "main.js.map": "/leedscarajo/static/js/main.8791c535.chunk.js.map",
+    "main.js": "/leedscarajo/static/js/main.df966122.chunk.js",
+    "main.js.map": "/leedscarajo/static/js/main.df966122.chunk.js.map",
     "runtime-main.js": "/leedscarajo/static/js/runtime-main.e21bcbb2.js",
     "runtime-main.js.map": "/leedscarajo/static/js/runtime-main.e21bcbb2.js.map",
-    "static/js/2.b62b4dba.chunk.js": "/leedscarajo/static/js/2.b62b4dba.chunk.js",
-    "static/js/2.b62b4dba.chunk.js.map": "/leedscarajo/static/js/2.b62b4dba.chunk.js.map",
+    "static/js/2.f5ce325c.chunk.js": "/leedscarajo/static/js/2.f5ce325c.chunk.js",
+    "static/js/2.f5ce325c.chunk.js.map": "/leedscarajo/static/js/2.f5ce325c.chunk.js.map",
     "index.html": "/leedscarajo/index.html",
-    "precache-manifest.f0f0f3bba61ea6f8c70bdb139417c170.js": "/leedscarajo/precache-manifest.f0f0f3bba61ea6f8c70bdb139417c170.js",
+    "precache-manifest.49763ca1971fbda2ecff7480e5db7331.js": "/leedscarajo/precache-manifest.49763ca1971fbda2ecff7480e5db7331.js",
     "service-worker.js": "/leedscarajo/service-worker.js",
     "static/css/main.5f361e03.chunk.css.map": "/leedscarajo/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.b62b4dba.chunk.js.LICENSE.txt": "/leedscarajo/static/js/2.b62b4dba.chunk.js.LICENSE.txt"
+    "static/js/2.f5ce325c.chunk.js.LICENSE.txt": "/leedscarajo/static/js/2.f5ce325c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e21bcbb2.js",
-    "static/js/2.b62b4dba.chunk.js",
+    "static/js/2.f5ce325c.chunk.js",
     "static/css/main.5f361e03.chunk.css",
-    "static/js/main.8791c535.chunk.js"
+    "static/js/main.df966122.chunk.js"
   ]
 }
