@@ -23,12 +23,12 @@ const Fixture = () => {
   const [value, setValue] = useState('');
   const [matchesData, setMatchesData] = useState(parseMatches(null));
   const [filterTerms, setFilterTerms] = useState(null);
-  const { data: matches, loading: loadingMatches } = useEndpoint('FIXTURE', matchesSelector);
-  const { data: teams, loading: loadingTeams } = useEndpoint('TEAMS', teamsSelector);
+  const { data: matches } = useEndpoint('FIXTURE', matchesSelector);
+  const { data: teams } = useEndpoint('TEAMS', teamsSelector);
 
   useEffect(() => {
-    !loadingMatches && matches && setMatchesData(parseMatches(matches));
-  }, [loadingMatches, matches]);
+    matches && setMatchesData(parseMatches(matches));
+  }, [matches]);
   
   useEffect(() => {
     matchesData && value && setMatchesData(filter(parseMatches(matches), value));
@@ -38,7 +38,7 @@ const Fixture = () => {
     teams && setFilterTerms(parseTeams(teams));
   }, [teams]);
 
-  return loadingMatches || !matchesData || loadingTeams || !teams || !filterTerms ? <div>Loading...</div> : 
+  return !matchesData|| !teams || !filterTerms ? <div>Loading...</div> : 
     <>
       <Select
         options={filterTerms}
@@ -47,7 +47,7 @@ const Fixture = () => {
         onSearch={text => {
           const escapedText = text.replace(/[-\\^$*+?.()|[\]{}]/g, '\\$&');
           const exp = new RegExp(escapedText, 'i');
-          setFilterTerms(parseTeams(teams.teams).filter(o => exp.test(o)));
+          setFilterTerms(parseTeams(teams).filter(o => exp.test(o)));
         }}
       />
       <DataTable

@@ -4,12 +4,12 @@ import { useEndpoint } from '../../utils/hooks';
 import { standingsSelector }  from '../../utils/selectors';
 
 const Positions = () => {
-  const { data, loading } = useEndpoint('STANDINGS', standingsSelector);
+  const { data } = useEndpoint('STANDINGS', standingsSelector);
   const [sort, setSort] = useState({
     property: 'points',
     direction: 'desc'
   });
-  return loading || !data ? <div>Loading...</div> : (
+  return !data ? <div>Loading...</div> : (
     <DataTable
       primaryKey='index'
       sort={sort}
