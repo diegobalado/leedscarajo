@@ -2,7 +2,9 @@ import dateFnsFormat from 'date-fns/format';
 
 const LEAGUE_CODE = '2016';
 const END_LEAGUE = '2020-07-22';
-const TODAY = dateFnsFormat(new Date(), 'yyyy-mm-dd');
+const TODAY = dateFnsFormat(new Date(), 'yyyy-MM-dd');
+
+console.log('TODAY', TODAY);
 
 export const ENDPOINTS = {
   STANDINGS: `competitions/${LEAGUE_CODE}/standings`,
