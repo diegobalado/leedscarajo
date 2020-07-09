@@ -18,4 +18,8 @@ export const getLocalStorage = key => {
   return { data, isExpired };
 };
 
+export const clearLocalStorage = () => {
+  Object.keys(ENDPOINTS).map(item => setLocalStorage(`ls-${item}`, ''));
+};
+
 export const getEndpoint = service => `${process.env.REACT_APP_API_FOOTBALL_URL}/${ENDPOINTS[service]}`;
