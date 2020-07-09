@@ -7,6 +7,7 @@ const Header = () => <BaseHeader pad="medium">
     <Link to={`${process.env.PUBLIC_URL}/home`}>Home</Link>
     <Link to={`${process.env.PUBLIC_URL}/positions`}>Positions</Link>
     <Link to={`${process.env.PUBLIC_URL}/fixture`}>Fixture</Link>
+    <Link to={`${process.env.PUBLIC_URL}/bettings`}>Bettings</Link>
   </Nav>
 </BaseHeader>
 

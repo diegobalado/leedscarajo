@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { DataTable, Text } from 'grommet';
 import { useEndpoint } from '../../utils/hooks';
+import { standingsSelector }  from '../../utils/selectors';
 
 const Positions = () => {
-  const { data, loading } = useEndpoint('standings');
+  const { data, loading } = useEndpoint('STANDINGS', standingsSelector);
   const [sort, setSort] = useState({
     property: 'points',
     direction: 'desc'
@@ -21,6 +22,7 @@ const Positions = () => {
         {
           property: 'team.name',
           header: <Text>Team</Text>,
+          sortable: false
         },
         {
           property: 'playedGames',
@@ -47,7 +49,7 @@ const Positions = () => {
           header: <Text>P</Text>,
         },
       ]}
-      data={data.standings[0].table}
+      data={data}
     />
   );
 };

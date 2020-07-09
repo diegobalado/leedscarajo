@@ -1,3 +1,5 @@
+import { ENDPOINTS } from '../config';
+
 export const setLocalStorage = (key, data) => {
   const now = new Date();
   const expires = new Date();
@@ -15,3 +17,5 @@ export const getLocalStorage = key => {
   const isExpired = expireDate < now;
   return { data, isExpired };
 };
+
+export const getEndpoint = service => `${process.env.REACT_APP_API_FOOTBALL_URL}/${ENDPOINTS[service]}`;
