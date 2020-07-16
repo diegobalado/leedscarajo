@@ -3,6 +3,7 @@ import { DataTable, Text, Select } from 'grommet';
 import dateFnsFormat from 'date-fns/format';
 import { useEndpoint } from '../../utils/hooks';
 import { matchesSelector, teamsSelector } from '../../utils/selectors';
+import Bettings from '../Bettings';
 
 const parseMatches = data => {
   return data && data.map(match => {
@@ -20,9 +21,13 @@ const parseTeams = data => data.map(team => team.name).sort();
 const filter = (data, value) => data.filter(({ home, away }) => home === value || away === value);
 
 const Fixture = () => {
-  const [value, setValue] = useState('');
+  const [value, setValue] = useState(null);
+  const [home, setHome] = useState(null);
+  const [away, setAway] = useState(null);
   const [matchesData, setMatchesData] = useState(parseMatches(null));
   const [filterTerms, setFilterTerms] = useState(null);
+  const [show, setShow] = useState(false);
+
   const { data: matches } = useEndpoint('FIXTURE', matchesSelector);
   const { data: teams } = useEndpoint('TEAMS', teamsSelector);
 
@@ -69,7 +74,13 @@ const Fixture = () => {
           },
         ]}
         data={matchesData}
+        onClickRow={({ datum }) => {
+          setHome(datum.home);
+          setAway(datum.away);
+          setShow(true);
+        }}
       />
+      {show && <Bettings setShow={setShow} home={home} away={away} />}
     </>;
 };
 

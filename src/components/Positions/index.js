@@ -15,10 +15,10 @@ const Positions = () => {
       sort={sort}
       onSort={setSort}
       columns={[
-        {
-          property: 'position',
-          header: <Text>Position</Text>
-        },
+        // {
+        //   property: 'position',
+        //   header: <Text>Position</Text>
+        // },
         {
           property: 'team.name',
           header: <Text>Team</Text>,
