@@ -1,6 +1,6 @@
 import dateFnsFormat from 'date-fns/format';
 
-const LEAGUE_CODE = '2016';
+const LEAGUE_CODE = 'PL';
 const END_LEAGUE = '2020-07-22';
 const TODAY = dateFnsFormat(new Date(), 'yyyy-MM-dd');
 
